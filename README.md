@@ -52,7 +52,7 @@ Once you have your Swift package set up, adding Alamofire as a dependency is as 
 dependencies: [
     .package(url: "https://github.com/AdeptusAstartes/AlamofireRSSParser.git", .upToNextMajor(from: "3.0.0"))
 ]
-
+```
 
 ### Manually
 Alternately you can add the contents of AlamofireRSSParser/Pod/Classes/ to your project and import the classes as appropriate.
