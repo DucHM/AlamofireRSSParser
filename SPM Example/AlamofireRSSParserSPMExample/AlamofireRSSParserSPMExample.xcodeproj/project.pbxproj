@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		F20AD46428D92847000A713F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20AD46328D92847000A713F /* AppDelegate.swift */; };
 		F20AD46828D92847000A713F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20AD46728D92847000A713F /* ViewController.swift */; };
-		F20AD47928D928A3000A713F /* AlamofireRSSParser in Frameworks */ = {isa = PBXBuildFile; productRef = F20AD47828D928A3000A713F /* AlamofireRSSParser */; };
 		F20AD48328D92992000A713F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F20AD47F28D92991000A713F /* LaunchScreen.xib */; };
 		F20AD48428D92992000A713F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20AD48128D92991000A713F /* Main.storyboard */; };
+		F28A8C5A28D934A2006B4170 /* AlamofireRSSParser in Frameworks */ = {isa = PBXBuildFile; productRef = F28A8C5928D934A2006B4170 /* AlamofireRSSParser */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F20AD47928D928A3000A713F /* AlamofireRSSParser in Frameworks */,
+				F28A8C5A28D934A2006B4170 /* AlamofireRSSParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +88,7 @@
 			);
 			name = AlamofireRSSParserSPMExample;
 			packageProductDependencies = (
-				F20AD47828D928A3000A713F /* AlamofireRSSParser */,
+				F28A8C5928D934A2006B4170 /* AlamofireRSSParser */,
 			);
 			productName = AlamofireRSSParserSPMExample;
 			productReference = F20AD46028D92847000A713F /* AlamofireRSSParserSPMExample.app */;
@@ -119,7 +119,7 @@
 			);
 			mainGroup = F20AD45728D92847000A713F;
 			packageReferences = (
-				F20AD47728D928A3000A713F /* XCRemoteSwiftPackageReference "AlamofireRSSParser" */,
+				F28A8C5828D934A2006B4170 /* XCRemoteSwiftPackageReference "AlamofireRSSParser" */,
 			);
 			productRefGroup = F20AD46128D92847000A713F /* Products */;
 			projectDirPath = "";
@@ -368,20 +368,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F20AD47728D928A3000A713F /* XCRemoteSwiftPackageReference "AlamofireRSSParser" */ = {
+		F28A8C5828D934A2006B4170 /* XCRemoteSwiftPackageReference "AlamofireRSSParser" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/AdeptusAstartes/AlamofireRSSParser.git";
+			repositoryURL = "https://github.com/AdeptusAstartes/AlamofireRSSParser/";
 			requirement = {
-				branch = updates;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F20AD47828D928A3000A713F /* AlamofireRSSParser */ = {
+		F28A8C5928D934A2006B4170 /* AlamofireRSSParser */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F20AD47728D928A3000A713F /* XCRemoteSwiftPackageReference "AlamofireRSSParser" */;
+			package = F28A8C5828D934A2006B4170 /* XCRemoteSwiftPackageReference "AlamofireRSSParser" */;
 			productName = AlamofireRSSParser;
 		};
 /* End XCSwiftPackageProductDependency section */
