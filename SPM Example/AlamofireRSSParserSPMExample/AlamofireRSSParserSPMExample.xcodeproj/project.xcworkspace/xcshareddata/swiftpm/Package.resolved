@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/AdeptusAstartes/AlamofireRSSParser.git",
       "state" : {
-        "revision" : "c4f21caae1bb49987285eaa261da8e7caf275ac3",
-        "version" : "3.0.0"
+        "revision" : "cec8b07ee1410a52dc34bf1618c4d664e779e80c",
+        "version" : "4.0.0"
       }
     }
   ],
