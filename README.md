@@ -12,7 +12,7 @@
 - Swift 5.6+
 - Alamofire 5.5.0+
 
-**Note: AlamofireRSSParser v4.0.0 adds support for Swift concurrency.  Due to bugs with older Swift 5.5 compilers and Xcode versions, AlamofireRSSParser's concurrency support requires Swift 5.6.0 or Xcode 13.3.1**
+**Note: AlamofireRSSParser v4.0.0 adds support for Swift Concurrency.  Due to bugs with older Swift 5.5 compilers and Xcode versions, AlamofireRSSParser's concurrency support requires Swift 5.6.0 or Xcode 13.3.1**
 
 #### Legacy Swift Support
 _If you need to support an earlier version of Swift, please either download the zip or point your Podfile at the corresponding tag:_
@@ -85,7 +85,7 @@ AF.request(url).responseRSS() { (response) -> Void in
 }
 ```
 
-### Swift concurrency example:
+### Swift Concurrency example:
 
 ```swift
 // Swift concurrency example.

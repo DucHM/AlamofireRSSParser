@@ -24,7 +24,7 @@ class ViewController: UIViewController {
             }
         }
 
-        // Swift concurrency example.
+        // Swift Concurrency example.
         if #available(iOS 13.0, *) {
             Task.init {
                 if let rss = await self.swiftConcurrencyFetch() {
