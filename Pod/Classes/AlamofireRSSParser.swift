@@ -15,6 +15,17 @@ extension DataRequest {
                              completionHandler: @escaping (AFDataResponse<RSSFeed>) -> Void) -> Self {
         response(queue: queue, responseSerializer: RSSResponseSerializer(), completionHandler: completionHandler)
     }
+    
+    @available(iOS 13, *)
+    public func serializingRSS(automaticallyCancelling shouldAutomaticallyCancel: Bool = false,
+                                dataPreprocessor: DataPreprocessor = DataResponseSerializer.defaultDataPreprocessor,
+                                emptyResponseCodes: Set<Int> = DataResponseSerializer.defaultEmptyResponseCodes,
+                                emptyRequestMethods: Set<HTTPMethod> = DataResponseSerializer.defaultEmptyRequestMethods) -> DataTask<RSSFeed> {
+        serializingResponse(using: RSSResponseSerializer(dataPreprocessor: dataPreprocessor,
+                                                          emptyResponseCodes: emptyResponseCodes,
+                                                          emptyRequestMethods: emptyRequestMethods),
+                            automaticallyCancelling: shouldAutomaticallyCancel)
+    }
 }
 
 public final class RSSResponseSerializer: ResponseSerializer {
